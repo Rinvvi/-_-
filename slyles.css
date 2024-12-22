@@ -1,0 +1,58 @@
+/* static/css/styles.css */
+
+/* Добавляем кастомные стили */
+.card {
+    margin-bottom: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    margin-top: 30px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form-feedback {
+    color: red;
+    text-align: center;
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Стили для анимации кнопок */
+.btn {
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* Стили для подсказок */
+.tooltip-inner {
+    background-color: #0056b3;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .service-list {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+    }
+}
